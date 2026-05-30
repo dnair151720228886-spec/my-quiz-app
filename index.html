@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анкета питания</title>
+    <title>Nutrition Quiz</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
@@ -34,7 +34,7 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            box-sizing: border-radius;
+            box-sizing: border-box;
         }
         button {
             width: 100%;
@@ -55,22 +55,22 @@
 <body>
 
 <div class="container">
-    <h2>🥗 Анкета питания</h2>
+    <h2>🥗 Nutrition Quiz</h2>
     <form id="quizForm">
-        <label for="goal">Какая ваша цель?</label>
+        <label for="goal">What is your goal?</label>
         <select id="goal">
-            <option value="weight_loss">Сбросить вес</option>
-            <option value="muscle_gain">Набрать массу</option>
-            <option value="healthy_eating">Правильно питаться</option>
+            <option value="weight_loss">Lose weight</option>
+            <option value="muscle_gain">Gain muscle</option>
+            <option value="healthy_eating">Eat healthy</option>
         </select>
 
-        <label for="meals">Сколько раз в день вы едите?</label>
-        <input type="number" id="meals" min="1" max="10" placeholder="Например, 3">
+        <label for="meals">How many times a day do you eat?</label>
+        <input type="number" id="meals" min="1" max="10" placeholder="For example, 3">
 
-        <label for="water">Сколько воды вы пьете (в литрах)?</label>
-        <input type="number" id="water" step="0.1" min="0" placeholder="Например, 1.5">
+        <label for="water">How much water do you drink (in liters)?</label>
+        <input type="number" id="water" step="0.1" min="0" placeholder="For example, 1.5">
 
-        <button type="button" onclick="sendData()">Отправить данные 🚀</button>
+        <button type="button" onclick="sendData()">Submit 🚀</button>
     </form>
 </div>
 
@@ -84,7 +84,7 @@
         const water = document.getElementById('water').value;
 
         if (!meals || !water) {
-            alert('Пожалуйста, заполните все поля!');
+            alert('Please fill in all fields!');
             return;
         }
 
