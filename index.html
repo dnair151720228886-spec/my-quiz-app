@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition Quiz</title>
+    <title>Викторина по питанию</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
@@ -55,22 +55,22 @@
 <body>
 
 <div class="container">
-    <h2>🥗 Nutrition Quiz</h2>
+    <h2>🥗 Викторина по питанию</h2>
     <form id="quizForm">
-        <label for="goal">What is your goal?</label>
+        <label for="goal">Какова ваша цель?</label>
         <select id="goal">
-            <option value="weight_loss">Lose weight</option>
-            <option value="muscle_gain">Gain muscle</option>
-            <option value="healthy_eating">Eat healthy</option>
+            <option value="weight_loss">Похудеть</option>
+            <option value="muscle_gain">Набрать мышечную массу</option>
+            <option value="healthy_eating">Здоровое питание</option>
         </select>
 
-        <label for="meals">How many times a day do you eat?</label>
-        <input type="number" id="meals" min="1" max="10" placeholder="For example, 3">
+        <label for="meals">Сколько раз в день вы едите?</label>
+        <input type="number" id="meals" min="1" max="10" placeholder="Например, 3">
 
-        <label for="water">How much water do you drink (in liters)?</label>
-        <input type="number" id="water" step="0.1" min="0" placeholder="For example, 1.5">
+        <label for="water">Сколько воды вы пьете (в литрах)?</label>
+        <input type="number" id="water" step="0.1" min="0" placeholder="Например, 1.5">
 
-        <button type="button" onclick="sendData()">Submit 🚀</button>
+        <button type="button" onclick="sendData()">Отправить 🚀</button>
     </form>
 </div>
 
